@@ -1,0 +1,137 @@
+/*Hero*/
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 0;
+  background-color: #2f303a;
+  text-align: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+        /*59:00 https://www.youtube.com/watch?v=l7qT8Umnyuo&feature=youtu.be*/
+    ),
+    url(../images/1x/hero-1x.jpg);
+  background-repeat: no-repeat; /*48:55 мин https://www.youtube.com/watch?v=VThG4A-4bJQ&feature=youtu.be*/
+  /*background-position: center;*/
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+          /*59:00 https://www.youtube.com/watch?v=l7qT8Umnyuo&feature=youtu.be*/
+      ),
+      url(../images/1x/hero-2x.jpg);
+  }
+}
+@media (min-width: 489px) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+          /*59:00 https://www.youtube.com/watch?v=l7qT8Umnyuo&feature=youtu.be*/
+      ),
+      url(../images/1x/hero_tablet-1x.jpg);
+  }
+  @media (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../images/1x/hero_tablet-2x.jpg);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+          /*59:00 https://www.youtube.com/watch?v=l7qT8Umnyuo&feature=youtu.be*/
+      ),
+      url(../images/1x/hero_desk-1x.jpg);
+    background-size: cover;
+  }
+  @media (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url(../images/1x/hero_desk-2x.jpg);
+    }
+  }
+}
+
+.hero-section .container {
+  display: block;
+  justify-content: center;
+  text-align: center; /*[HTML+CSS #30] Блочная модель/Flexbox. Q&A (26/11/2020) 1:48:21 https://www.youtube.com/watch?v=GezCqjS6SKo&feature=youtu.be*/
+}
+
+.hero-title {
+  color: var(--hero-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 118px 30px 0px 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /*max-width: 696px;*/
+  align-content: center;
+  animation-duration: 1800ms;
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 189px 0px 189px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 252px 0px 252px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/*Button*/
+.button {
+  color: var(--hero-color);
+  background-color: var(--title-text-color);
+  font-family: inherit;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 50px;
+  margin-top: 30px;
+
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  animation-duration: 2200ms;
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+    background-color: var(--hero-color);
+    font-family: inherit;
+  }
+}
+
+.hero-section .button {
+  margin-bottom: 118px;
+}

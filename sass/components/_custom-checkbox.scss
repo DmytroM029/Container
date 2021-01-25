@@ -1,0 +1,42 @@
+/*===================Кастомный Checkbox==================*/
+/*ИЛИ 1:24:00 https://www.youtube.com/watch?v=6_Fq4G1pZas&feature=youtu.be*/
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  display: inline-block;
+  -webkit-appearance: none; /*1:20:00 https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  &:checked + .check-icon {
+    /*1:36:00https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+
+    background-color: #2196f3;
+    background-image: url(../images/checkplus.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+    color: #ffffff;
+
+    border: 1px solid #000000;
+    border-color: #2196f3;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}
+.check-icon {
+  /*1:36:00https://www.youtube.com/watch?v=wahf3ZcDxV4&feature=youtu.be*/
+
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #000000;
+}
+
+/*===================Кастомный Checkbox END==================*/

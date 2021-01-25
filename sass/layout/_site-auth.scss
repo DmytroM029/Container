@@ -1,0 +1,131 @@
+/*///////////////SITE-AUTH/////////////*/
+.site-auth {
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    & .item  + .item /*альтернатива .site-auth .item:not(:last-child). Только делает последним не правый, а левый элемент (от первого левого, который не учитывается).*/ {
+      margin-left: 30px;
+      @media screen and (max-width: 767px) {
+        margin-top: 16px;
+      }
+    }
+  }
+  /*.site-auth .item  + .item /*альтернатива .site-auth .item:not(:last-child). Только делает последним не правый, а левый элемент (от первого левого, который не учитывается).*/
+  /*{
+  margin-left: 30px;
+}*/
+
+  .auth-list_link {
+    font-family: Roboto;
+    font-style: normal;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 5px;
+      margin-left: 46px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.142;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--title-text-color);
+      fill: var(--title-text-color);
+    }
+  }
+
+  .auth-list_icona {
+    width: 16px;
+    height: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+    }
+  }
+
+  .auth-list_iconb {
+    width: 10px;
+    height: 15px;
+    @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+  .auth-list_icona,
+  .auth-list_iconb {
+    fill: currentColor;
+    margin-right: 8px;
+    @media screen and (min-width: 768px) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.auth-list_link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.social-list_link {
+  &:hover,
+  &:focus {
+    background-color: var(--title-text-color);
+  }
+  &:hover .social-list_icon,
+  &:focus .social-list_icon {
+    fill: var(--hero-color);
+  }
+}
+
+/*Иконки через Before 
+.icon-mail,
+.icon-telephone {
+  display: flex;
+}*/
+/*.icon-mail::before {
+  content: "";
+  display: block;
+  background-image: url(../images/imgsprite/mail.svg);
+  height: 12px;
+  width: 16px;
+  fill: currentColor;
+}
+.icon-telephone::before {
+  content: "";
+  display: block;
+  background-image: url(../images/imgsprite/smartphone.svg);
+  height: 16px;
+  width: 10px;
+  fill: currentColor;
+}*/
+
+/*.icon-mail:hover::before,
+.icon-mail:focus::before,
+.icon-telephone:hover::before,
+.icon-telephone:focus::before {
+  content: "";
+  fill: var(--title-text-color);}*/

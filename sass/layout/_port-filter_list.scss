@@ -1,0 +1,152 @@
+/*/////////////////////portfolio.html////////////////////////*/
+
+/*filter*/
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap; /*Позволяем элементам перепрыгивать на другие строки, которые по умолчанию располагаются сверху вниз (вдоль поперечной оси).*/
+  margin: -15px;
+}
+
+.card-content {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.filter-list-item {
+  /*57:00https://www.youtube.com/watch?v=c32Jb9Ejz4k&feature=youtu.be*/
+  /*width: calc(
+    100%-60px / 3*/
+  /*Модуль 3. Вебинар №6. Flexbox 1:00:00 (1:16:00)*/
+  /*margin-bottom: 30px;
+  margin-right: 30px;*/
+  margin: 15px;
+  text-align: start;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  /*ИЛИ
+width: 370px;
+  margin-right: 30px;
+}
+.filter-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.filter-list-item:nth-child(-n + 3) {
+  margin-right: 0;*/
+} /*100%строки; 60px- суммарное значение 2 маржинов по 30px каждый в одной строке (2 маржина между 3-х элементов) / 3-количество элементов в строке*/
+
+.extra-padding {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 35px;
+  }
+}
+
+.filter-thumb {
+  /*ДЗ-5*/
+  position: relative;
+  overflow: hidden;
+}
+
+/*.filter-thumb::before {
+  /*Наведение на картинку, не на блок(карточку с имененм)*/
+/*content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(+100%);
+  background-color: chartreuse;
+  overflow: hidden;
+  /*opacity: 0;*/
+/*}*/
+/*.filter-thumb:hover::before {
+  /*opacity: 1;*/
+/* transform: translateY(0);
+}*/
+.filter-cover {
+  position: absolute;
+  /*transform: translate(-50%, -50%);*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.555;
+  color: var(--hero-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  /* or 156% */
+  letter-spacing: 0.03em;
+  /*opacity: 0;*/
+  /*transition: 250ms opacity linear;*/
+  padding: 77px 24px;
+  transform: translateY(+100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+}
+
+.filter-list_link {
+  display: block;
+  &:hover,
+  &:focus {
+    background: var(--hero-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .filter-cover,
+  &:focus .filter-cover {
+    /*transform: translate(-20px);*/
+    /*opacity: 1;*/
+    transform: translateY(0);
+  }
+
+  /*.filter-list-item::before {
+  display: inline-block;
+  position: absolute;
+}
+.filter-img {
+}*/
+}
+/*transition: transform background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)*/
+/*,
+    transform color 250ms cubic-bezier(0.4, 0, 0.2, 1)*/
+/*transition-delay: 250ms;*/
+/*ИЛИ transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+
+.filter-experience {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.filter-product {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
