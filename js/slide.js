@@ -1,26 +1,21 @@
-// $(document).ready(function(){
-//        $('.slider-for').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-// $('.slider-nav').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-//     });
-
-
-$(function () {
+$(document).ready(function () {
     $('.rev_slider').slick({
-        
-    })
-})
+         dots: false,
+    speed: 300,
+    arrows: false,
+    infinite: true,
+   
+  });
+  $('.slider-second').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.rev_slider',
+    dots: true,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth:true,
+    arrows: true,
 
-    
+  });
+
+});

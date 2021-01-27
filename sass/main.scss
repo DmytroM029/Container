@@ -2,21 +2,9 @@
 @import "./base/container";
 
 @import "./utils/variables";
-@import "./utils/visually-hidden";
 
-@import "./components/section";
-@import "./components/title";
-@import "./components/backdrop";
-@import "./components/custom-checkbox";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/logo";
-@import "./layout/site-nav";
-@import "./layout/site-auth";
-@import "./layout/advantages";
-@import "./layout/product";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/team";
 @import "./layout/slider";
+
+@import "./components/slick.scss";
+
+@import "./components/slick-theme.scss";
