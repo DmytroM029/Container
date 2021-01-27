@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.rev_slider').slick({
          dots: false,
     speed: 300,
-    arrows: false,
+    arrows: true,
     infinite: true,
    
   });
@@ -14,7 +14,7 @@ $(document).ready(function () {
     centerMode: false,
     focusOnSelect: true,
     variableWidth:true,
-    arrows: true,
+    arrows: false,
 
   });
 
