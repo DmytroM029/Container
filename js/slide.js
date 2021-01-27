@@ -2,8 +2,9 @@ $(document).ready(function () {
     $('.rev_slider').slick({
          dots: false,
     speed: 300,
-    arrows: true,
+    arrows: false,
       infinite: true,
+       focusOnSelect: true,
       asNavFor: '.slider-second',
     responsive: [
     {
@@ -24,8 +25,9 @@ $(document).ready(function () {
     
     focusOnSelect: true,
     variableWidth:false,
-    arrows: false,
+    arrows: true,
     infinite: true,
+    
 
     responsive: [
     {

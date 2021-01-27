@@ -119,6 +119,8 @@
   font-size: 12px;
   line-height: 1.66;
   /* or 167% */
+  max-height: 100px;
+  text-overflow: auto;
 
   color: #3d3d3d;
 }
@@ -143,7 +145,6 @@
   &:focus {
     border-radius: 50%;
     border: 3px solid #ff6b09;
-    color: #ff6b09;
   }
 }
 

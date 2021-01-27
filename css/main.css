@@ -237,6 +237,8 @@ img {
   font-size: 12px;
   line-height: 1.66;
   /* or 167% */
+  max-height: 100px;
+  text-overflow: auto;
   color: #3d3d3d;
 }
 
@@ -262,7 +264,6 @@ img {
 .slider-second_photo:hover, .slider-second_photo:focus {
   border-radius: 50%;
   border: 3px solid #ff6b09;
-  color: #ff6b09;
 }
 
 .slick-dotted.slick-slider {
@@ -430,6 +431,16 @@ img {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    top: -550%;
+    -webkit-transform: translate(0, 550%);
+    -ms-transform: translate(0, 550%);
+    transform: translate(0, 550%);
+  }
+}
+
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -454,7 +465,7 @@ img {
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: white;
+  color: #ff6b09;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
