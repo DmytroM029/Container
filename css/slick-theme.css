@@ -24,8 +24,7 @@
   font-size: 0px;
   cursor: pointer;
   background: transparent;
-  color: #ff6b09;
-  fill: #ff6b09;
+  color: transparent;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -33,16 +32,6 @@
   padding: 0;
   border: none;
   outline: none;
-}
-
-@media screen and (min-width: 768px) {
-  .slick-prev,
-  .slick-next {
-    top: -550%;
-    -webkit-transform: translate(0, 550%);
-    -ms-transform: translate(0, 550%);
-    transform: translate(0, 550%);
-  }
 }
 
 .slick-prev:hover, .slick-prev:focus,
@@ -69,7 +58,7 @@
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: #ff6b09;
+  color: white;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
